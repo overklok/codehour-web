@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обмен данными с сервером</title>
+
+    <link rel="stylesheet" type="text/css" href="style/sandbox.css">
+
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+    <script src="vendor/blockly/blockly_compressed.js"></script>
+    <script src="vendor/blockly/blocks_compressed.js"></script>
+
+    <script src="vendor/blockly/msg/js/ru.js"></script>
+
+    <script src="vendor/blockly/blocks/comm.js"></script>
+
+    <script src="vendor/blockly/generators/javascript.js"></script>
+    <script src="vendor/blockly/generators/javascript/math.js"></script>
+    <script src="vendor/blockly/generators/javascript/loops.js"></script>
+    <script src="vendor/blockly/generators/javascript/comm.js"></script>
+</head>
+<body>
+
+    <div id="top-panel">
+        <h1 style="display: inline;">Обмен данными с сервером</h1>
+        <span style="float: right; margin: 10px;">
+            Имя хоста (должен поддерживать кросс-доменные запросы):
+            <input id="hostname" value="127.0.0.1:80">
+        </span>
+
+    </div>
+
+    <div class="wrap">
+
+        <div id="preview">
+            <button class="button" id="get-result-btn">Выполнить код</button>
+            <pre>
+                <code id="result-js">
+
+                </code>
+            </pre>
+        </div>
+
+        <div id="editor">
+            <xml id="toolbox" style="display: none">
+                <block type="send_string"></block>
+                <block type="controls_repeat_ext"></block>
+                <block type="math_number"></block>
+            </xml>
+        </div>
+
+    </div>
+
+    <script>
+
+        Blockly.HSV_SATURATION = 1.0;
+
+        sendToServer = function (command) {
+
+            var query = 'http://' + $('#hostname').val() + '/' + command;
+
+            console.group('Запрос:', query);
+
+            $.ajax({
+                url: query,
+                context: document.body
+            }).done(function() {
+                console.info('Отправлено успешно');
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                console.error('Ошибка при отправлении запроса:', errorThrown);
+            });
+
+            console.groupEnd();
+        };
+
+        var preview = document.getElementById('preview');
+        var editor = document.getElementById('editor');
+
+        var workspace = Blockly.inject(editor,
+            {toolbox: document.getElementById('toolbox')});
+
+        var onresize = function(e) {
+            // Compute the absolute coordinates and dimensions of editor-area.
+            var element = preview;
+            var x = 0;
+            var y = 0;
+            do {
+                x += element.offsetLeft;
+                y += element.offsetTop;
+                element = element.offsetParent;
+            } while (element);
+            // Position #editor.
+            editor.style.width = x - 10 + 'px';
+            editor.style.height = window.height;
+        };
+        window.addEventListener('resize', onresize, false);
+        onresize();
+        Blockly.svgResize(workspace);
+
+        var result_btn = $('#get-result-btn');
+
+        result_btn.click(function () {
+            var code = Blockly.JavaScript.workspaceToCode(workspace);
+
+            var codeContainer = $('#result-js');
+
+            codeContainer.html(code);
+
+            eval(code);
+        });
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+
+
+#top-panel {
+    width: 100%;
+    height: 10vh;
+    min-height: 50px;
+    max-height: 80px;
+}
+
+.wrap {
+    height: 90vh;
+    min-height: 500px;
+}
+
+#editor {
+    height: 100%;
+    width: 400px;
+    margin-right: 5px;
+}
+
+#preview {
+    min-height: 100%;
+    width: 400px;
+    background-color: blue;
+    float: right;
+}
