@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="s4s">
+    <serverData>
+      <paths name="s4s">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="codehour-led/codehour-led-gui" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
