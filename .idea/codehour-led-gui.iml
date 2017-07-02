@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/base/vendor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/base/vendor/blockly" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/base/vendor/bootstrap-3.3.7-dist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/base/vendor/joyride" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/base/vendor/jquery" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/base/vendor/bootstro" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/base/vendor/bootstrap-tour" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/base/vendor/font-awesome-4.7.0" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

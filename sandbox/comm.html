@@ -64,7 +64,12 @@
 
             $.ajax({
                 url: query,
-                context: document.body
+                context: document.body,
+                success: function (data) {
+
+                    console.log(data);
+
+                }
             }).done(function() {
                 console.info('Отправлено успешно');
             }).fail(function(jqXHR, textStatus, errorThrown) {

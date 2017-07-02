@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Уровень 4 - Час кода - Адресная гирлянда</title>
+
+    <!--Стили общего назначения-->
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap-tour/css/bootstrap-tour.min.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!--Шрифты-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">-->
+
+    <link rel="stylesheet" type="text/css" href="../style/main.css">
+
+    <!--Библиотеки общего назначения-->
+        <!--jQuery-->
+        <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+
+        <!--Blockly-->
+        <script src="../vendor/blockly/blockly_compressed.js"></script>
+        <script src="../vendor/blockly/blocks_compressed.js"></script>
+
+        <!--Bootstrap-->
+        <script src="../vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+        <!--Bootstrap Tour-->
+        <script src="../vendor/bootstrap-tour/js/bootstrap-tour.min.js"></script>
+
+    <!--Русский перевод Blockly-->
+    <script src="../vendor/blockly/msg/js/ru.js"></script>
+
+    <!--Раздел блоков для работы с гирляндой-->
+    <script src="../blockly-extra/blocks/led.js"></script>
+
+    <!--Генераторы кода-->
+    <script src="../vendor/blockly/generators/javascript.js"></script>
+    <script src="../blockly-extra/generators/javascript/led.js"></script>
+
+    <!--Обработчики общего назначения-->
+        <!--Взаимодействие с сервером-->
+        <script src="../common/comm.js"></script>
+
+        <!--Визуализация-->
+        <script src="../popover/main.js"></script>
+        <script src="../common/vis.js"></script>
+
+        <!--Обработка кода-->
+        <script src="../proc/main.js"></script>
+
+    <!--Обработчки для конкретного уровня-->
+        <!--Всплывающие окна-->
+        <script src="../popover/4.js"></script>
+
+        <script type="application/javascript">
+            var LevelConfig = {
+                maxBlocks: 2
+            }
+        </script>
+
+</head>
+<body>
+
+<div id="top-panel">
+    <h1 style="display: inline;">Уровень 4</h1>
+
+    <div id="progress" class="strip ws2801">
+        <span><a class="led led-success"></a><a class="num" href="1.html">1</a></span>
+        <span><a class="led led-success"></a><a class="num" href="2.html">2</a></span>
+        <span><a class="led led-success"></a><a class="num" href="3.html">3</a></span>
+        <span><a class="led led-warning"></a><a class="num" href="4.html">4</a></span>
+        <span><a class="led"></a><a class="num">5</a></span>
+        <span><a class="led"></a><a class="num">6</a></span>
+        <span><a class="led"></a><a class="num">7</a></span>
+        <span><a class="led"></a><a class="num">8</a></span>
+        <span><a class="led"></a><a class="num">9</a></span>
+        <span><a class="led"></a><a class="num">10</a></span>
+    </div>
+</div>
+
+<div class="wrap">
+
+    <div id="preview">
+
+        <div id="display">
+            <img src="../image/no-image.webp" alt="No Image" style="width: 100%;">
+        </div>
+
+        <div id="actions" class="text-center">
+            <span class="btn btn-primary" id="show-task"><span class="fa fa-info"></span></span>
+            <button class="btn btn-success" id="execute-btn">Запустить</button>
+        </div>
+
+        <div id="status"></div>
+
+        <div id="comment">
+            <p>
+                Зажги гирлянду цветами радуги поочередно, а затем <b>погаси</b>. Чтобы погасить гирлянду, воспользуйся блоком “Потушить все лампочки”.
+            </p>
+        </div>
+
+
+    </div>
+
+    <div id="editor">
+        <xml id="toolbox" style="display: none">
+            <block type="leds_color"></block>
+            <block type="leds_off"></block>
+        </xml>
+    </div>
+
+    <div id="debug" style="height: 50px; background-color: lightblue">
+        <p id="debug-text">Debug</p>
+        <p id="debug-recv" style="color: blue">Recv</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+
