@@ -31,7 +31,7 @@ var tour = new Tour({
             "<div class='popover-content'></div> " +
             "<div class='popover-navigation'> " +
                 "<button class='btn btn-default btn-sm' data-role='next'>Далее »</button> " +
-                "<button class='btn btn-default btn-sm' data-role='end'>Приступить</button> " +
+                // "<button class='btn btn-default btn-sm' data-role='end'>Приступить</button> " +
             "</div> " +
         "</div>"
 });
@@ -106,10 +106,10 @@ var failTour = new Tour({
     backdrop: true,
     template:   "<div class='popover tour'> " +
     "<div class='arrow'></div> " +
-    "<h3 class='popover-title bg-success'></h3> " +
+    "<h3 class='popover-title bg-danger'></h3> " +
     "<div class='popover-content'></div> " +
     "<div class='popover-navigation'> " +
-    "<a class='btn btn-danger btn-sm' data-role='end'>Вернуться</a> " +
+    "<a class='btn btn-default btn-sm' data-role='end'>Вернуться</a> " +
     "</div> " +
     "</div>",
     steps: [

@@ -10,6 +10,8 @@ var COLOURS = [
     ["белый", "white"]
 ];
 
+var STRIP_LENGTH = 32;
+
 Blockly.Blocks['leds_color'] = {
     init: function() {
         this.jsonInit({
@@ -55,7 +57,7 @@ Blockly.Blocks['led_color'] = {
                     "check": "Number",
                     "value": 1,
                     "min": 1,
-                    "max": 30,
+                    "max": STRIP_LENGTH,
                     "precision": 1
                 },
                 {
