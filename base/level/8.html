@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Уровень 6 - Час кода - Адресная гирлянда</title>
+    <title>Уровень 8 - Час кода - Адресная гирлянда</title>
 
     <!--Стили общего назначения-->
     <link rel="stylesheet" type="text/css" href="../vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -50,14 +50,17 @@
 
     <!--Всплывающие окна-->
         <!--Обработчки для конкретного уровня-->
-        <script src="../popover/6.js"></script>
+        <script src="../popover/8.js"></script>
 
         <!--Обработчки для всех уровней -->
         <script src="../popover/main.js"></script>
 
         <script type="application/javascript">
             var LevelConfig = {
-                maxBlocks: 3
+                maxBlocks: 20,
+                maxBlocksType: {
+                    'led_color': 1
+                }
             }
         </script>
 
@@ -65,7 +68,7 @@
 <body>
 
 <div id="top-panel">
-    <h1 style="display: inline;">Уровень 6</h1>
+    <h1 style="display: inline;">Уровень 8</h1>
 
     <div id="progress" class="strip ws2801">
         <span><a class="led led-success"></a><a class="num" href="1.html">1</a></span>
@@ -73,9 +76,9 @@
         <span><a class="led led-success"></a><a class="num" href="3.html">3</a></span>
         <span><a class="led led-success"></a><a class="num" href="4.html">4</a></span>
         <span><a class="led led-success"></a><a class="num" href="5.html">5</a></span>
-        <span><a class="led led-warning"></a><a class="num" href="6.html">6</a></span>
-        <span><a class="led"></a><a class="num">7</a></span>
-        <span><a class="led"></a><a class="num">8</a></span>
+        <span><a class="led led-success"></a><a class="num" href="6.html">6</a></span>
+        <span><a class="led led-success"></a><a class="num" href="7.html">7</a></span>
+        <span><a class="led led-warning"></a><a class="num" href="8.html">8</a></span>
         <span><a class="led"></a><a class="num">9</a></span>
         <span><a class="led"></a><a class="num">10</a></span>
     </div>
@@ -98,7 +101,7 @@
 
         <div id="comment">
             <p>
-                Зажги <b>флаг России</b> из трёх лампочек. Для этого первую лампочку сделай белой, вторую - синей, третью - красной.
+                Зажги <b>первые десять</b> лампочек <b style="color: blue">синим</b>, а <b>вторые десять</b> - <b style="color: #ddc314">желтым</b> цветом. Первую лампочку зажги, используя <u>её номер</u>, а для зажигания последующих используй блок “Зажечь следующую лампочку”
             </p>
         </div>
 
@@ -106,9 +109,12 @@
     </div>
 
     <div id="editor">
-        <xml id="toolbox" style="display: none">
-            <block type="led_color"></block>
-        </xml>
+        <div id="toolbox-wrap">
+            <xml id="toolbox" style="display: none">
+                <block type="led_color"></block>
+                <block type="set_next_led"></block>
+            </xml>
+        </div>
     </div>
 
     <div id="debug" style="height: 50px; background-color: lightblue">

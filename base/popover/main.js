@@ -100,6 +100,10 @@ var successTour = new Tour({
     ]
 });
 
+if (typeof FAIL_MESSAGE == "undefined") {
+    var FAIL_MESSAGE = "Попробуй собрать последовательность по-другому.";
+}
+
 var failTour = new Tour({
     name: 'fail',
     storage: false,
@@ -115,7 +119,7 @@ var failTour = new Tour({
     steps: [
         {
             title: "Ой! Где-то ошибка",
-            content: "Попробуй собрать последовательность по-другому.",
+            content: FAIL_MESSAGE,
             orphan: true
         }
     ]

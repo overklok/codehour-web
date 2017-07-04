@@ -30,30 +30,37 @@ var CMD = {
         speed: CONFIG.DELAY_BASE
     },
     SET_NEXT_LED: {
+        repr: "CMD.SET_NEXT_LED",
         path: 'set_next_led',
         speed: CONFIG.DELAY_BASE
     },
     SET_PREV_LED: {
+        repr: "CMD.SET_PREV_LED",
         path: 'set_prev_led',
         speed: CONFIG.DELAY_BASE
     },
     SET_LEDS_MIX: {
+        repr: "CMD.SET_LEDS_MIX",
         path: 'set_leds_mix',
         speed: CONFIG.DELAY_BASE + 100
     },
     SET_LED_COLOR_MIX: {
+        repr: "CMD.SET_LED_COLOR_MIX",
         path: 'set_led_color_mix',
         speed: CONFIG.DELAY_BASE
     },
     SET_NEXT_LED_MIX: {
+        repr: "CMD.SET_NEXT_LED_MIX",
         path: 'set_next_led_mix',
         speed: CONFIG.DELAY_BASE
     },
     SET_PREV_LED_MIX: {
+        repr: "CMD.SET_PREV_LED_MIX",
         path: 'set_prev_led_mix',
         speed: CONFIG.DELAY_BASE
     },
     SET_LEDS_LIST: {
+        repr: "CMD.SET_LEDS_LIST",
         path: 'set_leds_list',
         speed: CONFIG.DELAY_BASE
     },
@@ -85,6 +92,8 @@ var makeCommand = function (command_type, args) {
 
     switch (command_type) {
         case CMD.SET_LEDS:
+        case CMD.SET_NEXT_LED:
+        case CMD.SET_PREV_LED:
             command += ":" + args[0];
             break;
         case CMD.SET_LED_COLOR:

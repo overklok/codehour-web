@@ -22,3 +22,16 @@ Blockly.JavaScript['led_color'] = function(block) {
     return 'execCommand(' + CMD.SET_LED_COLOR.repr +  ', [' + num + ',"' + color + '"]);';
 };
 
+Blockly.JavaScript['set_next_led'] = function(block) {
+    // String or array length.
+    var color = block.getFieldValue('COLOR');
+    // console.info(command);
+    return 'execCommand(' + CMD.SET_NEXT_LED.repr +  ', ["' + color + '"]);';
+};
+
+Blockly.JavaScript['set_prev_led'] = function(block) {
+    // String or array length.
+    var color = block.getFieldValue('COLOR');
+    // console.info(command);
+    return 'execCommand(' + CMD.SET_PREV_LED.repr +  ', ["' + color + '"]);';
+};
