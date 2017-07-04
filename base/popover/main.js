@@ -31,7 +31,7 @@ var tour = new Tour({
             "<div class='popover-content'></div> " +
             "<div class='popover-navigation'> " +
                 "<button class='btn btn-default btn-sm' data-role='next'>Далее »</button> " +
-                // "<button class='btn btn-default btn-sm' data-role='end'>Приступить</button> " +
+                "<button class='btn btn-default btn-sm' data-role='end'>Приступить</button> " +
             "</div> " +
         "</div>"
 });
