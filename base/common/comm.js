@@ -22,47 +22,47 @@ var CMD = {
     SET_LEDS: {
         repr: "CMD.SET_LEDS",
         path: 'set_leds',
-        speed: CONFIG.DELAY_BASE + 200
+        speed: CONFIG.DELAY_BASE + 250
     },
     SET_LED_COLOR: {
         repr: "CMD.SET_LED_COLOR",
         path: 'set_led_color',
-        speed: CONFIG.DELAY_BASE
+        speed: CONFIG.DELAY_BASE + 150
     },
     SET_NEXT_LED: {
         repr: "CMD.SET_NEXT_LED",
         path: 'set_next_led',
-        speed: CONFIG.DELAY_BASE
+        speed: CONFIG.DELAY_BASE + 150
     },
     SET_PREV_LED: {
         repr: "CMD.SET_PREV_LED",
         path: 'set_prev_led',
-        speed: CONFIG.DELAY_BASE
+        speed: CONFIG.DELAY_BASE+ 150
     },
     SET_LEDS_MIX: {
         repr: "CMD.SET_LEDS_MIX",
         path: 'set_leds_mix',
-        speed: CONFIG.DELAY_BASE + 200
+        speed: CONFIG.DELAY_BASE + 250
     },
     SET_LED_COLOR_MIX: {
         repr: "CMD.SET_LED_COLOR_MIX",
         path: 'set_led_color_mix',
-        speed: CONFIG.DELAY_BASE
+        speed: CONFIG.DELAY_BASE + 150
     },
     SET_NEXT_LED_MIX: {
         repr: "CMD.SET_NEXT_LED_MIX",
         path: 'set_next_led_mix',
-        speed: CONFIG.DELAY_BASE
+        speed: CONFIG.DELAY_BASE + 150
     },
     SET_PREV_LED_MIX: {
         repr: "CMD.SET_PREV_LED_MIX",
         path: 'set_prev_led_mix',
-        speed: CONFIG.DELAY_BASE
+        speed: CONFIG.DELAY_BASE + 150
     },
     SET_LEDS_LIST: {
         repr: "CMD.SET_LEDS_LIST",
         path: 'set_leds_list',
-        speed: CONFIG.DELAY_BASE
+        speed: CONFIG.DELAY_BASE + 250
     },
     THE_START: {
         repr: 'CMD.THE_START',
