@@ -166,7 +166,7 @@ var execCommand = function (command_type, args) {
         REQ_TIMEOUT_ACC += command_type.speed;
         COMMAND_COUNT++;
 
-        if (COMMAND_COUNT == 1) {
+        if (COMMAND_COUNT < 2) {
             REQ_TIMEOUT_ACC = 0;
         }
 
@@ -216,8 +216,8 @@ $(document).ready(function () {
                     REQ_TIMEOUT_ACC = 0;
                     COMMAND_COUNT = 0;
 
-                    code =  "execCommand(" + CMD.SET_LEDS.repr + ", ['black']);" + code +
-                            "execCommand(" + CMD.THE_START.repr + ", [" + getCurrentLevelNumber() + "]);";
+                    code =  "execCommand(" + CMD.SET_LEDS.repr + ", ['black']);" +
+                            "execCommand(" + CMD.THE_START.repr + ", [" + getCurrentLevelNumber() + "]);" + code;
 
 
                     code += "execCommand(" + CMD.THE_END.repr + ");";
