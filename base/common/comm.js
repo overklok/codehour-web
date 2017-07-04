@@ -216,8 +216,9 @@ $(document).ready(function () {
                     REQ_TIMEOUT_ACC = 0;
                     COMMAND_COUNT = 0;
 
-                    code =  "execCommand(" + CMD.THE_START.repr + ", [" + getCurrentLevelNumber() + "]);" +
-                            "execCommand(" + CMD.SET_LEDS.repr + ", ['black']);" + code;
+                    code =  "execCommand(" + CMD.SET_LEDS.repr + ", ['black']);" + code +
+                            "execCommand(" + CMD.THE_START.repr + ", [" + getCurrentLevelNumber() + "]);";
+
 
                     code += "execCommand(" + CMD.THE_END.repr + ");";
 
