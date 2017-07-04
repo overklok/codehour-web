@@ -22,7 +22,7 @@ var CMD = {
     SET_LEDS: {
         repr: "CMD.SET_LEDS",
         path: 'set_leds',
-        speed: CONFIG.DELAY_BASE + 100
+        speed: CONFIG.DELAY_BASE + 200
     },
     SET_LED_COLOR: {
         repr: "CMD.SET_LED_COLOR",
@@ -42,7 +42,7 @@ var CMD = {
     SET_LEDS_MIX: {
         repr: "CMD.SET_LEDS_MIX",
         path: 'set_leds_mix',
-        speed: CONFIG.DELAY_BASE + 100
+        speed: CONFIG.DELAY_BASE + 200
     },
     SET_LED_COLOR_MIX: {
         repr: "CMD.SET_LED_COLOR_MIX",
@@ -72,7 +72,7 @@ var CMD = {
     THE_END: {
         repr: 'CMD.THE_END',
         path: 'end_task',
-        speed: CONFIG.DELAY_BASE * 2
+        speed: CONFIG.DELAY_BASE * 3
     }
 };
 

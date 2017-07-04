@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d535be6-9c14-4777-989e-1862906ffedd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/level/10.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/level/8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/level/9.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/popover/10.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/popover/8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/popover/9.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/blockly-extra/blocks/led.js" afterPath="$PROJECT_DIR$/base/blockly-extra/blocks/led.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/blockly-extra/generators/javascript/led.js" afterPath="$PROJECT_DIR$/base/blockly-extra/generators/javascript/led.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/common/comm.js" afterPath="$PROJECT_DIR$/base/common/comm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/1.html" afterPath="$PROJECT_DIR$/base/level/1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/2.html" afterPath="$PROJECT_DIR$/base/level/2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/3.html" afterPath="$PROJECT_DIR$/base/level/3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/4.html" afterPath="$PROJECT_DIR$/base/level/4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/5.html" afterPath="$PROJECT_DIR$/base/level/5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/6.html" afterPath="$PROJECT_DIR$/base/level/6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/7.html" afterPath="$PROJECT_DIR$/base/level/7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/3.js" afterPath="$PROJECT_DIR$/base/popover/3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/4.js" afterPath="$PROJECT_DIR$/base/popover/4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/5.js" afterPath="$PROJECT_DIR$/base/popover/5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/6.js" afterPath="$PROJECT_DIR$/base/popover/6.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/7.js" afterPath="$PROJECT_DIR$/base/popover/7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/main.js" afterPath="$PROJECT_DIR$/base/popover/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/proc/main.js" afterPath="$PROJECT_DIR$/base/proc/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,7 +42,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="10.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="comm.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base/common/comm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/popover/10.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -101,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="7.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/level/7.html">
+      <file leaf-file-name="led.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/blockly-extra/blocks/led.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-450">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="1710">
+              <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -137,16 +124,6 @@
         <entry file="file://$PROJECT_DIR$/base/level/3.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-210">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="6.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/level/6.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-585">
               <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
@@ -222,12 +199,12 @@
         <option value="$PROJECT_DIR$/base/level/2.html" />
         <option value="$PROJECT_DIR$/base/level/1.html" />
         <option value="$PROJECT_DIR$/base/blockly-extra/blocks/led.js" />
-        <option value="$PROJECT_DIR$/base/common/comm.js" />
         <option value="$PROJECT_DIR$/base/blockly-extra/generators/javascript/led.js" />
         <option value="$PROJECT_DIR$/base/popover/9.js" />
         <option value="$PROJECT_DIR$/base/level/9.html" />
         <option value="$PROJECT_DIR$/base/level/10.html" />
         <option value="$PROJECT_DIR$/base/popover/10.js" />
+        <option value="$PROJECT_DIR$/base/common/comm.js" />
       </list>
     </option>
   </component>
@@ -592,18 +569,18 @@
       <updated>1498551308522</updated>
       <workItem from="1498551309769" duration="11276000" />
       <workItem from="1498742064777" duration="50624000" />
-      <workItem from="1499166998354" duration="16905000" />
+      <workItem from="1499166998354" duration="17236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78805000" />
+    <option name="totallyTimeSpent" value="79136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25681493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25681493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.50573885" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -890,22 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/blockly-extra/blocks/led.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/common/comm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-644">
-          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/blockly-extra/generators/javascript/led.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1026,6 +987,22 @@
           <folding>
             <marker date="1499191532000" expanded="true" signature="178:188" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/blockly-extra/blocks/led.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="114" column="34" lean-forward="false" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/common/comm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
