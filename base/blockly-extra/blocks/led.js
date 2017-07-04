@@ -1,6 +1,6 @@
 var COLOURS = [
     ["синий", "blue"],
-    ["голубой", "cyan"],
+    ["голубой", "light_blue"],
     ["зелёный", "green"],
     ["красный", "red"],
     ["жёлтый", "yellow"],
@@ -52,7 +52,11 @@ Blockly.Blocks['led_color'] = {
                 {
                     "type": "field_number",
                     "name": "NUM",
-                    "check": "Number"
+                    "check": "Number",
+                    "value": 1,
+                    "min": 1,
+                    "max": 30,
+                    "precision": 1
                 },
                 {
                     "type": "field_dropdown",

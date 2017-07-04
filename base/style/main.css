@@ -1,10 +1,14 @@
 body {
-    /*font-family: 'Roboto Condensed', sans-serif;*/
+    font-family: 'Roboto Condensed', sans-serif;
     background-image: url('../image/bg.jpg');
     min-width: 1000px;
 }
 
 #debug {
+    display: none;
+}
+
+#status {
     display: none;
 }
 
@@ -30,7 +34,7 @@ body {
 }
 
 .wrap {
-    height: 80vh;
+    height: 85vh;
     margin-top: 20px;
     min-height: 400px;
 }
@@ -39,7 +43,20 @@ body {
     height: 100%;
     width: 400px;
     margin-right: 5px;
+    /*overflow-y: scroll;*/
 }
+
+.blocklyWorkspace {
+    height: 1600px !important;
+}
+
+.blocklySvg {
+    overflow: scroll !important;
+}
+
+/*.injectionDiv {*/
+    /*height: 1600px;*/
+/*}*/
 
 #preview {
     /*height: 100%;*/

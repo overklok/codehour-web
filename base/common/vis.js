@@ -9,8 +9,12 @@ $(document).ready(function () {
     workspace = Blockly.inject(editor, {
         toolbox: document.getElementById('toolbox'),
         trashcan: true,
-        maxBlocks: LevelConfig.maxBlocks
+        maxBlocks: LevelConfig.maxBlocks,
+        scrollbars: true
     });
+
+    // workspace.scrollX = 0;
+    // workspace.scrollY = 0;
 
     var onresize = function(e) {
         // Compute the absolute coordinates and dimensions of editor-area.

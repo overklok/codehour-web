@@ -100,6 +100,27 @@ var successTour = new Tour({
     ]
 });
 
+var failTour = new Tour({
+    name: 'fail',
+    storage: false,
+    backdrop: true,
+    template:   "<div class='popover tour'> " +
+    "<div class='arrow'></div> " +
+    "<h3 class='popover-title bg-success'></h3> " +
+    "<div class='popover-content'></div> " +
+    "<div class='popover-navigation'> " +
+    "<a class='btn btn-danger btn-sm' data-role='end'>Вернуться</a> " +
+    "</div> " +
+    "</div>",
+    steps: [
+        {
+            title: "Ой! Где-то ошибка",
+            content: "Попробуй собрать последовательность по-другому.",
+            orphan: true
+        }
+    ]
+});
+
 
 $(document).ready(function () {
 
@@ -109,6 +130,7 @@ $(document).ready(function () {
     commonErrorTour.init();
     noCodeErrorTour.init();
     successTour.init();
+    failTour.init();
     tour.init();
 
     // Start the main tour

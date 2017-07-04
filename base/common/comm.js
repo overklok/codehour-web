@@ -7,58 +7,65 @@ var REQUESTED = 0;
 var RECEIVED = 0;
 
 var EXECUTING = false;
+var INITIALIZING = false;
 
 var CONFIG = {
     LED_HTTP_SERVER: '127.0.0.1:8888',
     REQ_ATTEMPTS_MAX: 10,
     REQ_TIMEOUT_MAX: undefined,
     LAST_LEVEL: 10,
-    MODE_DEBUG: false
+    MODE_DEBUG: true,
+    DELAY_BASE: 100
 };
 
 var CMD = {
     SET_LEDS: {
         repr: "CMD.SET_LEDS",
         path: 'set_leds',
-        speed: 1000
+        speed: CONFIG.DELAY_BASE + 100
     },
     SET_LED_COLOR: {
         repr: "CMD.SET_LED_COLOR",
         path: 'set_led_color',
-        speed: 100
+        speed: CONFIG.DELAY_BASE
     },
     SET_NEXT_LED: {
         path: 'set_next_led',
-        speed: 10
+        speed: CONFIG.DELAY_BASE
     },
     SET_PREV_LED: {
         path: 'set_prev_led',
-        speed: 10
+        speed: CONFIG.DELAY_BASE
     },
     SET_LEDS_MIX: {
         path: 'set_leds_mix',
-        speed: 10
+        speed: CONFIG.DELAY_BASE + 100
     },
     SET_LED_COLOR_MIX: {
         path: 'set_led_color_mix',
-        speed: 10
+        speed: CONFIG.DELAY_BASE
     },
     SET_NEXT_LED_MIX: {
         path: 'set_next_led_mix',
-        speed: 10
+        speed: CONFIG.DELAY_BASE
     },
     SET_PREV_LED_MIX: {
         path: 'set_prev_led_mix',
-        speed: 10
+        speed: CONFIG.DELAY_BASE
     },
     SET_LEDS_LIST: {
         path: 'set_leds_list',
-        speed: 10
+        speed: CONFIG.DELAY_BASE
+    },
+    THE_START: {
+        repr: 'CMD.THE_START',
+        path: 'task',
+        speed: 0
     },
     THE_END: {
         repr: 'CMD.THE_END',
-        path: 'end_of_programm',
-        speed: 120
+        path: 'end_task',
+        speed: CONFIG.DELAY_BASE * 2
     }
 };
 
@@ -73,10 +80,24 @@ var haltExec = function () {
 };
 
 var makeCommand = function (command_type, args) {
-    return command_type.path;
-};
 
-//аддитивность, не мультипликативность!
+    var command = command_type.path;
+
+    switch (command_type) {
+        case CMD.SET_LEDS:
+            command += ":" + args[0];
+            break;
+        case CMD.SET_LED_COLOR:
+            command += ":" + args[0] + ";" + args[1];
+            break;
+        case CMD.THE_START:
+            command += ":" + args[0];
+    }
+
+    console.log(command);
+
+    return command;
+};
 
 var sendToServer = function (command_type, query) {
 
@@ -116,6 +137,7 @@ var sendToServer = function (command_type, query) {
         url: query,
         context: document.body,
         success: function (data) {
+            console.log(data);
             SERVER_RESPONSE[data]();
             $('#debug-recv').html("Получено ответов: " + ++RECEIVED);
         }
@@ -137,58 +159,77 @@ var sendToServer = function (command_type, query) {
 
 var execCommand = function (command_type, args) {
 
-    var query = 'http://' + CONFIG.LED_HTTP_SERVER + '/' + makeCommand(command_type, args);
+    if (EXECUTING === true) {
 
-    REQ_TIMEOUT_ACC += command_type.speed;
-    COMMAND_COUNT++;
+        var query = 'http://' + CONFIG.LED_HTTP_SERVER + '/' + makeCommand(command_type, args);
 
-    if (COMMAND_COUNT == 1) {
-        REQ_TIMEOUT_ACC = 0;
+        REQ_TIMEOUT_ACC += command_type.speed;
+        COMMAND_COUNT++;
+
+        if (COMMAND_COUNT == 1) {
+            REQ_TIMEOUT_ACC = 0;
+        }
+
+        console.info("Timeout: ", REQ_TIMEOUT_ACC);
+
+        setTimeout(function () {
+            sendToServer(command_type, query)
+        }, REQ_TIMEOUT_ACC);
     }
 
-    console.info("Timeout: ", REQ_TIMEOUT_ACC);
+};
 
-    setTimeout(function() {sendToServer(command_type, query)}, REQ_TIMEOUT_ACC);
+var resetColor = function () {
+    INITIALIZING = true;
+    setExec(true);
+    // sendToServer(command_type, query);
+    execCommand(CMD.SET_LEDS, ['black']);
+    // setExec(false);
 };
 
 $(document).ready(function () {
 
-$('#execute-btn').click(function () {
+    resetColor();
 
-    if (EXECUTING === false) {
+    $('#execute-btn').click(function () {
 
-        var xml = Blockly.Xml.workspaceToDom(workspace);
+        if (EXECUTING === false) {
 
-        if (preCheck(xml)) {
+            var xml = Blockly.Xml.workspaceToDom(workspace);
 
-            setExec(true);
+            if (preCheck(xml)) {
 
-            var code = Blockly.JavaScript.workspaceToCode(workspace);
+                setExec(true);
 
-            if (code.length == 0) {
-                noCodeErrorTour.start(true);
-                setExec(false);
-                return;
+                var code = Blockly.JavaScript.workspaceToCode(workspace);
+
+                if (code.length == 0) {
+                    noCodeErrorTour.start(true);
+                    setExec(false);
+                    return;
+                }
+
+                try {
+                    REQUESTED = 0;
+                    RECEIVED = 0;
+
+                    REQ_TIMEOUT_ACC = 0;
+                    COMMAND_COUNT = 0;
+
+                    code = "execCommand(" + CMD.THE_START.repr + ", [" + getCurrentLevelNumber() + "]);" + code;
+
+                    code += "execCommand(" + CMD.THE_END.repr + ");";
+
+                    eval(code);
+                } catch (e) {
+                    alert(e);
+                }
+
             }
-
-            try {
-                REQUESTED = 0;
-                RECEIVED = 0;
-
-                REQ_TIMEOUT_ACC = 0;
-                COMMAND_COUNT = 0;
-
-                code += "execCommand(" + CMD.THE_END.repr + ");";
-
-                eval(code);
-            } catch (e) {
-                alert(e);
-            }
-
+        } else {
+            setExec(false);
         }
-    }
-});
-
+    });
 });
 
 var setExec = function (state) {
@@ -196,25 +237,33 @@ var setExec = function (state) {
     EXECUTING_OLD = EXECUTING;
     EXECUTING = state;
 
-    if (EXECUTING !== EXECUTING_OLD) {
+    if (EXECUTING !== EXECUTING_OLD && INITIALIZING === false) {
         console.warn('EXEC: ', EXECUTING);
         onChangeExec(state);
     }
-
 };
 
 var reactToSuccess = function () {
-    //stub
     setExecStatus(EXEC_STATUS.PROGRESS);
+
+    if (INITIALIZING === true) {
+        setExec(false);
+        INITIALIZING = false;
+    }
 };
 
-var reactToEnd = function () {
-    //stub
+var reactToEndGood = function () {
     setExec(false);
     successTour.start(true);
 };
 
+var reactToEndBad = function () {
+    setExec(false);
+    failTour.start(true);
+};
+
 var SERVER_RESPONSE = {
-    'success': reactToSuccess,
-    'end': reactToEnd
+    'ok': reactToSuccess,
+    'end_good': reactToEndGood,
+    'end_bad': reactToEndBad
 };
