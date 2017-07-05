@@ -246,7 +246,7 @@ $(document).ready(function () {
 
             }
         } else {
-            if (STOP_CHAIN_ID != -1) {
+            if (CHAIN_ID > 1) {
                 STOP_CHAIN_ID = CHAIN_ID;
             }
             setExec(false);
