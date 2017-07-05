@@ -6,7 +6,6 @@ var COLOURS = [
     ["жёлтый", "yellow"],
     ["оранжевый", "orange"],
     ["фиолетовый", "violet"],
-    ["бирюзовый", "turquoise"],
     ["белый", "white"]
 ];
 
