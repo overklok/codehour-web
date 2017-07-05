@@ -10,7 +10,7 @@ var EXECUTING = false;
 var INITIALIZING = false;
 
 var CHAIN_ID = 0;
-var STOP_CHAIN_ID = 0;
+var STOP_CHAIN_ID = -1;
 
 var CONFIG = {
     LED_HTTP_SERVER: '127.0.0.1:8888',
@@ -246,7 +246,9 @@ $(document).ready(function () {
 
             }
         } else {
-            STOP_CHAIN_ID = CHAIN_ID;
+            if (STOP_CHAIN_ID != -1) {
+                STOP_CHAIN_ID = CHAIN_ID;
+            }
             setExec(false);
         }
     });
