@@ -9,6 +9,9 @@ var RECEIVED = 0;
 var EXECUTING = false;
 var INITIALIZING = false;
 
+var CHAIN_ID = 0;
+var STOP_CHAIN_ID = 0;
+
 var CONFIG = {
     LED_HTTP_SERVER: '127.0.0.1:8888',
     REQ_ATTEMPTS_MAX: 10,
@@ -108,12 +111,13 @@ var makeCommand = function (command_type, args) {
     return command;
 };
 
-var sendToServer = function (command_type, query) {
+var sendToServer = function (command_type, query, ch_id) {
 
-    if (EXECUTING === false)
+    if (!(EXECUTING === true && ch_id > STOP_CHAIN_ID)) {
         return;
+    }
 
-    console.log("sts", command_type.repr);
+    console.log("sts", command_type.repr, "ch_id", CHAIN_ID, "s_ch_id", STOP_CHAIN_ID);
 
     if (command_type == CMD.THE_END) {
         if (REQUESTED > RECEIVED) {
@@ -166,7 +170,7 @@ var sendToServer = function (command_type, query) {
     console.groupEnd();
 };
 
-var execCommand = function (command_type, args) {
+var execCommand = function (command_type, args, ch_id) {
 
     if (EXECUTING === true) {
 
@@ -182,7 +186,7 @@ var execCommand = function (command_type, args) {
         console.info("Timeout: ", REQ_TIMEOUT_ACC);
 
         setTimeout(function () {
-            sendToServer(command_type, query)
+            sendToServer(command_type, query, CHAIN_ID)
         }, REQ_TIMEOUT_ACC);
     }
 
@@ -225,6 +229,8 @@ $(document).ready(function () {
                     REQ_TIMEOUT_ACC = 0;
                     COMMAND_COUNT = 0;
 
+                    CHAIN_ID++;
+
                     code =  "execCommand(" + CMD.SET_LEDS.repr + ", ['black']);" +
                             "execCommand(" + CMD.THE_START.repr + ", [" + getCurrentLevelNumber() + "]);" + code;
 
@@ -238,6 +244,7 @@ $(document).ready(function () {
 
             }
         } else {
+            STOP_CHAIN_ID = CHAIN_ID;
             setExec(false);
         }
     });

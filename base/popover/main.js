@@ -30,8 +30,8 @@ var tour = new Tour({
             "<h3 class='popover-title'></h3> " +
             "<div class='popover-content'></div> " +
             "<div class='popover-navigation'> " +
-                "<button class='btn btn-default btn-sm' data-role='next'>Далее »</button> " +
-                "<button class='btn btn-default btn-sm' data-role='end'>Приступить</button> " +
+                "<button class='btn btn-success btn-sm' data-role='next'>Далее »</button> " +
+                "<button class='btn btn-danger btn-sm' data-role='end'>Приступить</button> " +
             "</div> " +
         "</div>"
 });
@@ -118,7 +118,7 @@ var failTour = new Tour({
     "</div>",
     steps: [
         {
-            title: "Ой! Где-то ошибка",
+            title: "Ой! Где-то ошибка...",
             content: FAIL_MESSAGE,
             orphan: true
         }
