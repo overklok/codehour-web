@@ -185,8 +185,10 @@ var execCommand = function (command_type, args, ch_id) {
 
         console.info("Timeout: ", REQ_TIMEOUT_ACC);
 
+        var current_chain_id = CHAIN_ID;
+
         setTimeout(function () {
-            sendToServer(command_type, query, CHAIN_ID)
+            sendToServer(command_type, query, current_chain_id)
         }, REQ_TIMEOUT_ACC);
     }
 
