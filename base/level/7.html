@@ -49,15 +49,15 @@
         <script src="../proc/main.js"></script>
 
     <!--Всплывающие окна-->
-    <!--Обработчки для конкретного уровня-->
-    <script src="../popover/7.js"></script>
+        <!--Обработчки для конкретного уровня-->
+        <script src="../popover/7.js"></script>
 
-    <!--Обработчки для всех уровней -->
-    <script src="../popover/main.js"></script>
+        <!--Обработчки для всех уровней -->
+        <script src="../popover/main.js"></script>
 
         <script type="application/javascript">
             var LevelConfig = {
-                maxBlocks: 30
+                maxBlocks: 9
             }
         </script>
 
@@ -78,6 +78,10 @@
         <span><a class="led"></a><a class="num">8</a></span>
         <span><a class="led"></a><a class="num">9</a></span>
         <span><a class="led"></a><a class="num">10</a></span>
+        <span><a class="led"></a><a class="num">11</a></span>
+        <span><a class="led"></a><a class="num">12</a></span>
+        <span><a class="led"></a><a class="num">13</a></span>
+        <span><a class="led"></a><a class="num">14</a></span>
     </div>
 </div>
 
@@ -98,7 +102,7 @@
 
         <div id="comment">
             <p>
-                Теперь зажги флаг <b>по всей длине</b> гирлянды. Подсказка: можно копировать блоки, кликнув по ним правой кнопкой мыши.
+                Зажги флаг побольше: первые три лампочки зажги белым цветом, затем три — <b style="color:blue;">синим</b>, и три — <b style="color: red">красным</b>.
             </p>
         </div>
 
@@ -106,9 +110,11 @@
     </div>
 
     <div id="editor">
-        <xml id="toolbox" style="display: none">
-            <block type="led_color"></block>
-        </xml>
+        <div id="toolbox-wrap">
+            <xml id="toolbox" style="display: none">
+                <block type="led_color"></block>
+            </xml>
+        </div>
     </div>
 
     <div id="debug" style="height: 50px; background-color: lightblue">

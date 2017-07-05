@@ -25,15 +25,35 @@ var tour = new Tour({
     // name: 'test' + Math.random().toString(36).substring(7),
     storage: false,
     backdrop: true,
-    template:   "<div class='popover tour'> " +
-        "<div class='arrow'></div> " +
-            "<h3 class='popover-title'></h3> " +
-            "<div class='popover-content'></div> " +
-            "<div class='popover-navigation'> " +
-                "<button class='btn btn-success btn-sm' data-role='next'>Далее »</button> " +
-                "<button class='btn btn-danger btn-sm' data-role='end'>Приступить</button> " +
-            "</div> " +
-        "</div>"
+    template: function () {
+        console.log(Object.keys(this.steps).length, tour._state.current_step);
+        if (Object.keys(this.steps).length === tour._state.current_step + 1) {
+            return "<div class='popover tour'> " +
+                        "<div class='arrow'></div> " +
+                        "<h3 class='popover-title'></h3> " +
+                        "<div class='popover-content'></div> " +
+                        "<div class='popover-navigation'> " +
+                            "<button class='btn btn-success btn-sm' data-role='end'>Приступить</button> " +
+                        "</div> " +
+                    "</div>";
+        } else {
+            return  "<div class='popover tour'> " +
+                        "<div class='arrow'></div> " +
+                        "<h3 class='popover-title'></h3> " +
+                        "<div class='popover-content'></div> " +
+                        "<div class='popover-navigation'> " +
+                            "<button class='btn btn-success btn-sm' data-role='next'>Далее »</button> " +
+                            "<button class='btn btn-danger btn-sm' data-role='end'>Приступить</button> " +
+                        "</div> " +
+                    "</div>";
+        }
+    },
+    onShow: function (t) {
+        console.log('fire');
+        if (typeof onShowHandler !== "undefined") {
+            onShowHandler(t);
+        }
+    }
 });
 
 var commonErrorTour = new Tour({
@@ -88,7 +108,7 @@ var successTour = new Tour({
                     "<div class='popover-content'></div> " +
                     "<div class='popover-navigation'> " +
                         "<a href='" + getNextLevelUrl() + "' class='btn btn-success btn-sm'>Продолжить >></a> " +
-                        "<a class='btn btn-default btn-sm' data-role='end'>Вернуться</a> " +
+                        "<a class='btn btn-default btn-sm' data-role='end'>Выполнить ещё раз</a> " +
                     "</div> " +
                 "</div>",
     steps: [
@@ -113,7 +133,7 @@ var failTour = new Tour({
     "<h3 class='popover-title bg-danger'></h3> " +
     "<div class='popover-content'></div> " +
     "<div class='popover-navigation'> " +
-    "<a class='btn btn-default btn-sm' data-role='end'>Вернуться</a> " +
+    "<a class='btn btn-default btn-sm' data-role='end'>Выполнить ещё раз</a> " +
     "</div> " +
     "</div>",
     steps: [

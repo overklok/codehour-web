@@ -14,6 +14,7 @@ body {
 
 .popover {
     font-family: 'Roboto Condensed', sans-serif !important;
+    max-width: 446px;
 }
 
 .popover-title.bg-danger {
@@ -22,6 +23,16 @@ body {
 
 .popover-title.bg-success {
     background-color: #dff0d8 !important;
+}
+
+.popover-arrow {
+    position: absolute;
+    z-index: 2000;
+    display: none;
+}
+
+.btn-success {
+    background-color: #48e048;
 }
 
 #top-panel {
@@ -71,6 +82,12 @@ body {
     width: 100%;
     height: 400px;
     padding: 10px;
+    text-align: center;
+}
+
+.gif-demo {
+    height: 100%;
+    width: auto;
 }
 
 #actions {

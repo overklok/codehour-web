@@ -35,3 +35,5 @@ Blockly.JavaScript['set_prev_led'] = function(block) {
     // console.info(command);
     return 'execCommand(' + CMD.SET_PREV_LED.repr +  ', ["' + color + '"]);';
 };
+
+Blockly.JavaScript['controls_repeat_ext_led'] = Blockly.JavaScript['controls_repeat_ext'];

@@ -49,17 +49,17 @@
         <script src="../proc/main.js"></script>
 
     <!--Всплывающие окна-->
-        <!--Обработчки для конкретного уровня-->
-        <script src="../popover/9.js"></script>
+    <!--Обработчки для конкретного уровня-->
+    <script src="../popover/9.js"></script>
 
-        <!--Обработчки для всех уровней -->
-        <script src="../popover/main.js"></script>
+    <!--Обработчки для всех уровней -->
+    <script src="../popover/main.js"></script>
 
         <script type="application/javascript">
             var LevelConfig = {
-                maxBlocks: 30,
+                maxBlocks: 5,
                 maxBlocksType: {
-                    'led_color': 2
+                    'led_color': 1
                 }
             }
         </script>
@@ -81,6 +81,10 @@
         <span><a class="led led-success"></a><a class="num" href="8.html">8</a></span>
         <span><a class="led led-warning"></a><a class="num" href="9.html">9</a></span>
         <span><a class="led"></a><a class="num">10</a></span>
+        <span><a class="led"></a><a class="num">11</a></span>
+        <span><a class="led"></a><a class="num">12</a></span>
+        <span><a class="led"></a><a class="num">13</a></span>
+        <span><a class="led"></a><a class="num">14</a></span>
     </div>
 </div>
 
@@ -101,7 +105,7 @@
 
         <div id="comment">
             <p>
-                Аналогично работает блок “Зажечь предыдущую лампочку”. Зажги <b>16-ую</b> лампочку и все последующие (до 30-й) <b style="color: blue">синим</b>, а <b>15-ую</b> и все предыдущие - <b style="color: lawngreen">зелёным</b>.
+                Задание: зажги <b>первые пять</b> лампочек <b style="color: darkviolet">фиолетовым</b> цветом.
             </p>
         </div>
 
@@ -113,7 +117,6 @@
             <xml id="toolbox" style="display: none">
                 <block type="led_color"></block>
                 <block type="set_next_led"></block>
-                <block type="set_prev_led"></block>
             </xml>
         </div>
     </div>

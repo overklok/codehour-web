@@ -26,3 +26,29 @@ steps = [
 ];
 
 FAIL_MESSAGE = "Проверь, правильно ли выбран цвет.";
+
+onShowHandler = function (_tour) {
+
+    if (typeof _tour._state !== "undefined" &&_tour._state.current_step === 0) {
+
+        console.log("ASFJKDNGJKSF");
+
+        var coords = $(".blocklyBlockCanvas").position();
+
+        var arrowHTML = '<div class="popover-arrow">' +
+                            '<img src="/base/image/popover-extra/arrow.png" style="width: 140px;">' +
+                        '</div>';
+
+        $("body").prepend(arrowHTML);
+
+        var $popover_arrow = $(".popover-arrow");
+
+        $popover_arrow.offset({top: coords.top, left: coords.left - 10});
+
+        setTimeout(function () {
+            $popover_arrow.fadeIn(100);
+        }, 400);
+    } else {
+        $(".popover-arrow").fadeOut(100);
+    }
+};

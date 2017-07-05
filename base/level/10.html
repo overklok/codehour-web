@@ -31,17 +31,11 @@
     <!--Русский перевод Blockly-->
     <script src="../vendor/blockly/msg/js/ru.js"></script>
 
-    <!--Основные разделы блоков-->
-    <script src="../vendor/blockly/blocks/math.js"></script>
-    <script src="../vendor/blockly/blocks/loops.js"></script>
-
     <!--Раздел блоков для работы с гирляндой-->
     <script src="../blockly-extra/blocks/led.js"></script>
 
     <!--Генераторы кода-->
     <script src="../vendor/blockly/generators/javascript.js"></script>
-    <script src="../vendor/blockly/generators/javascript/math.js"></script>
-    <script src="../vendor/blockly/generators/javascript/loops.js"></script>
     <script src="../blockly-extra/generators/javascript/led.js"></script>
 
     <!--Обработчики общего назначения-->
@@ -55,17 +49,17 @@
         <script src="../proc/main.js"></script>
 
     <!--Всплывающие окна-->
-        <!--Обработчки для конкретного уровня-->
-        <script src="../popover/10.js"></script>
+    <!--Обработчки для конкретного уровня-->
+    <script src="../popover/10.js"></script>
 
-        <!--Обработчки для всех уровней -->
-        <script src="../popover/main.js"></script>
+    <!--Обработчки для всех уровней -->
+    <script src="../popover/main.js"></script>
 
         <script type="application/javascript">
             var LevelConfig = {
-                maxBlocks: 30,
+                maxBlocks: 5,
                 maxBlocksType: {
-                    'led_color': 2
+                    'led_color': 1
                 }
             }
         </script>
@@ -87,6 +81,10 @@
         <span><a class="led led-success"></a><a class="num" href="8.html">8</a></span>
         <span><a class="led led-success"></a><a class="num" href="9.html">9</a></span>
         <span><a class="led led-warning"></a><a class="num" href="10.html">10</a></span>
+        <span><a class="led"></a><a class="num">11</a></span>
+        <span><a class="led"></a><a class="num">12</a></span>
+        <span><a class="led"></a><a class="num">13</a></span>
+        <span><a class="led"></a><a class="num">14</a></span>
     </div>
 </div>
 
@@ -107,7 +105,7 @@
 
         <div id="comment">
             <p>
-                Повторяющиеся блоки можно вставлять внутрь блока <b>“Повторить”</b>. Зажигай на гирлянде по лампочке <b style="color: red">красным</b> цветом от начала и до конца.
+                Попробуй зажечь <b>пять</b> лампочек <b style="color: lawngreen">зелёным</b> цветом, <u>начиная с <b>десятой</b> лампочки</u>.
             </p>
         </div>
 
@@ -117,10 +115,8 @@
     <div id="editor">
         <div id="toolbox-wrap">
             <xml id="toolbox" style="display: none">
-                <block type="math_number"></block>
-                <block type="controls_repeat_ext"></block>
                 <block type="led_color"></block>
-                <block type="set_next_led"></block>
+                <block type="set_prev_led"></block>
             </xml>
         </div>
     </div>
