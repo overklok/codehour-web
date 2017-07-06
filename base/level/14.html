@@ -36,8 +36,6 @@
 
     <!--Генераторы кода-->
     <script src="../vendor/blockly/generators/javascript.js"></script>
-    <script src="../vendor/blockly/generators/javascript/math.js"></script>
-    <script src="../vendor/blockly/generators/javascript/loops.js"></script>
     <script src="../blockly-extra/generators/javascript/led.js"></script>
 
     <!--Обработчики общего назначения-->
@@ -77,7 +75,7 @@
         <span><a class="led led-success"></a><a class="num" href="2.html">2</a></span>
         <span><a class="led led-success"></a><a class="num" href="3.html">3</a></span>
         <span><a class="led led-success"></a><a class="num" href="4.html">4</a></span>
-        <span><a class="led led-success"></a><a class="num" href="5.html">5</a></span>
+        <span><a class="led led-success"></a><a class="num" href="6.html">5</a></span>
         <span><a class="led led-success"></a><a class="num" href="6.html">6</a></span>
         <span><a class="led led-success"></a><a class="num" href="7.html">7</a></span>
         <span><a class="led led-success"></a><a class="num" href="8.html">8</a></span>
@@ -87,6 +85,7 @@
         <span><a class="led led-success"></a><a class="num" href="12.html">12</a></span>
         <span><a class="led led-success"></a><a class="num" href="13.html">13</a></span>
         <span><a class="led led-warning"></a><a class="num" href="14.html">14</a></span>
+        <span><a class="led"></a><a class="num">15</a></span>
     </div>
 </div>
 
@@ -95,19 +94,19 @@
     <div id="preview">
 
         <div id="display">
-            <img src="../image/no-image.webp" alt="No Image" style="width: 100%;">
+            <img src="../image/demo/9.gif" class="gif-demo" alt="Level 9" style="width: 100%;">
         </div>
 
         <div id="actions" class="text-center">
-            <span class="btn btn-primary" id="show-task"><span class="fa fa-info"></span></span>
-            <button class="btn btn-success" id="execute-btn">Запустить</button>
+            <button class="btn btn-success btn-lg" id="execute-btn">Запустить</button><br>
+            <button class="btn btn-info btn-lg" id="show-help">Показать подсказку</button>
         </div>
 
         <div id="status"></div>
 
         <div id="comment">
             <p>
-                Повторяющиеся блоки можно вставлять внутрь блока <b>“Повторить”</b>. Зажигай на гирлянде по лампочке <b style="color: red">красным</b> цветом от начала и до конца.
+                Аналогично работает блок “Зажечь предыдущую лампочку”. Зажги <b>16-ую</b> лампочку и все последующие (до 30-й) <b style="color: blue">синим</b>, а <b>15-ую</b> и все предыдущие - <b style="color: lawngreen">зелёным</b>.
             </p>
         </div>
 
@@ -117,9 +116,9 @@
     <div id="editor">
         <div id="toolbox-wrap">
             <xml id="toolbox" style="display: none">
-                <block type="controls_repeat_ext_led"></block>
                 <block type="led_color"></block>
                 <block type="set_next_led"></block>
+                <block type="set_prev_led"></block>
             </xml>
         </div>
     </div>

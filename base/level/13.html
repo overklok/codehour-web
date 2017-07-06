@@ -57,9 +57,9 @@
 
         <script type="application/javascript">
             var LevelConfig = {
-                maxBlocks: 30,
+                maxBlocks: 5,
                 maxBlocksType: {
-                    'led_color': 2
+                    'led_color': 1
                 }
             }
         </script>
@@ -75,16 +75,17 @@
         <span><a class="led led-success"></a><a class="num" href="2.html">2</a></span>
         <span><a class="led led-success"></a><a class="num" href="3.html">3</a></span>
         <span><a class="led led-success"></a><a class="num" href="4.html">4</a></span>
-        <span><a class="led led-success"></a><a class="num" href="5.html">5</a></span>
-        <span><a class="led led-success"></a><a class="num" href="6.html">6</a></span>
+        <span><a class="led led-success"></a><a class="num" href="6.html">5</a></span>
+        <span><a class="led led-success"></a><a class="num" href="5.html">6</a></span>
         <span><a class="led led-success"></a><a class="num" href="7.html">7</a></span>
         <span><a class="led led-success"></a><a class="num" href="8.html">8</a></span>
         <span><a class="led led-success"></a><a class="num" href="9.html">9</a></span>
         <span><a class="led led-success"></a><a class="num" href="10.html">10</a></span>
         <span><a class="led led-success"></a><a class="num" href="11.html">11</a></span>
-        <span><a class="led led-success"></a><a class="num" href="12.html">12</a></span>
+        <span><a class="led led-warning"></a><a class="num" href="12.html">12</a></span>
         <span><a class="led led-warning"></a><a class="num" href="13.html">13</a></span>
         <span><a class="led"></a><a class="num">14</a></span>
+        <span><a class="led"></a><a class="num">15</a></span>
     </div>
 </div>
 
@@ -93,19 +94,19 @@
     <div id="preview">
 
         <div id="display">
-            <img src="../image/demo/9.gif" class="gif-demo" alt="Level 9" style="width: 100%;">
+            <img src="../image/demo/8.gif" class="gif-demo" alt="Level 8" style="width: 100%;">
         </div>
 
         <div id="actions" class="text-center">
-            <span class="btn btn-primary" id="show-task"><span class="fa fa-info"></span></span>
-            <button class="btn btn-success" id="execute-btn">Запустить</button>
+            <button class="btn btn-success btn-lg" id="execute-btn">Запустить</button><br>
+            <button class="btn btn-info btn-lg" id="show-help">Показать подсказку</button>
         </div>
 
         <div id="status"></div>
 
         <div id="comment">
             <p>
-                Аналогично работает блок “Зажечь предыдущую лампочку”. Зажги <b>16-ую</b> лампочку и все последующие (до 30-й) <b style="color: blue">синим</b>, а <b>15-ую</b> и все предыдущие - <b style="color: lawngreen">зелёным</b>.
+                Зажги <b>двадцатую</b> лампочку и <b>четыре ей предыдущих</b> <b style="color: darkorange">оранжевым</b> цветом.
             </p>
         </div>
 
@@ -116,7 +117,6 @@
         <div id="toolbox-wrap">
             <xml id="toolbox" style="display: none">
                 <block type="led_color"></block>
-                <block type="set_next_led"></block>
                 <block type="set_prev_led"></block>
             </xml>
         </div>

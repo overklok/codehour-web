@@ -16,7 +16,7 @@ var CONFIG = {
     LED_HTTP_SERVER: '127.0.0.1:8888',
     REQ_ATTEMPTS_MAX: 10,
     REQ_TIMEOUT_MAX: undefined,
-    LAST_LEVEL: 10,
+    LAST_LEVEL: 15,
     MODE_DEBUG: true,
     DELAY_BASE: 100
 };

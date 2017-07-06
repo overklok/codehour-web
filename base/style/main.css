@@ -4,6 +4,8 @@ body {
     min-width: 1000px;
 }
 
+/* Disable dev-only containers */
+
 #debug {
     display: none;
 }
@@ -11,6 +13,8 @@ body {
 #status {
     display: none;
 }
+
+/* Bootstrap overriding */
 
 .popover {
     font-family: 'Roboto Condensed', sans-serif !important;
@@ -25,15 +29,30 @@ body {
     background-color: #dff0d8 !important;
 }
 
+button.close {
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+.btn-success {
+    background-color: #48e048;
+}
+
+/* Popover stuff */
+
 .popover-arrow {
     position: absolute;
     z-index: 2000;
     display: none;
 }
 
-.btn-success {
-    background-color: #48e048;
+.sur_block {
+    position: absolute;
+    opacity: 0;
+    z-index: 100000;
 }
+
+/* Base markup */
 
 #top-panel {
     width: 100%;
@@ -42,6 +61,10 @@ body {
     max-height: 80px;
 
     padding: 16px;
+}
+
+#progress {
+    overflow-y: hidden;
 }
 
 .wrap {
@@ -72,7 +95,8 @@ body {
 #preview {
     /*height: 100%;*/
     min-height: 100%;
-    width: 400px;
+    /*width: 300px;*/
+    width: 20%;
     float: right;
     border: solid #dddddd 1px;
     background-color: #fff;
@@ -80,7 +104,7 @@ body {
 
 #preview #display {
     width: 100%;
-    height: 400px;
+    /*height: 400px;*/
     padding: 10px;
     text-align: center;
 }
@@ -91,22 +115,26 @@ body {
 }
 
 #actions {
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #comment {
     padding: 10px;
 }
 
-#show-task {
-    width: 30px;
-    height: 30px;
+#show-help {
+    /*width: 30px;*/
+    /*height: 30px;*/
     text-align: center;
-    padding: 6px 0;
+    margin: 10px;
+    padding: 6px;
     font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 15px;
+    /*line-height: 1.428571429;*/
+    /*border-radius: 15px;*/
 }
+
+/* Base strip classes */
 
 .strip {
     float: right;
@@ -129,6 +157,8 @@ body {
 .strip span:last-of-type  {
     /*background-color: red;*/
 }
+
+/* Specific strip styles */
 
 .strip.ws2801 span {
     width: 99px;

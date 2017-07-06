@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Уровень 5 - Час кода - Адресная гирлянда</title>
+    <title>Уровень 15 - Час кода - Адресная гирлянда</title>
 
     <!--Стили общего назначения-->
     <link rel="stylesheet" type="text/css" href="../vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -36,6 +36,8 @@
 
     <!--Генераторы кода-->
     <script src="../vendor/blockly/generators/javascript.js"></script>
+    <script src="../vendor/blockly/generators/javascript/math.js"></script>
+    <script src="../vendor/blockly/generators/javascript/loops.js"></script>
     <script src="../blockly-extra/generators/javascript/led.js"></script>
 
     <!--Обработчики общего назначения-->
@@ -50,16 +52,16 @@
 
     <!--Всплывающие окна-->
         <!--Обработчки для конкретного уровня-->
-        <script src="../popover/5.js"></script>
+        <script src="../popover/15.js"></script>
 
         <!--Обработчки для всех уровней -->
         <script src="../popover/main.js"></script>
 
         <script type="application/javascript">
             var LevelConfig = {
-                maxBlocks: 6,
+                maxBlocks: 30,
                 maxBlocksType: {
-                    'leds_color': 3
+                    'led_color': 2
                 }
             }
         </script>
@@ -68,7 +70,7 @@
 <body>
 
 <div id="top-panel">
-    <h1 style="display: inline;">Уровень 5</h1>
+    <h1 style="display: inline;">Уровень 15</h1>
 
     <div id="progress" class="strip ws2801">
         <span><a class="led led-success"></a><a class="num" href="1.html">1</a></span>
@@ -76,16 +78,16 @@
         <span><a class="led led-success"></a><a class="num" href="3.html">3</a></span>
         <span><a class="led led-success"></a><a class="num" href="4.html">4</a></span>
         <span><a class="led led-success"></a><a class="num" href="6.html">5</a></span>
-        <span><a class="led led-warning"></a><a class="num" href="5.html">6</a></span>
-        <span><a class="led"></a><a class="num">7</a></span>
-        <span><a class="led"></a><a class="num">8</a></span>
-        <span><a class="led"></a><a class="num">9</a></span>
-        <span><a class="led"></a><a class="num">10</a></span>
-        <span><a class="led"></a><a class="num">11</a></span>
-        <span><a class="led"></a><a class="num">12</a></span>
-        <span><a class="led"></a><a class="num">13</a></span>
-        <span><a class="led"></a><a class="num">14</a></span>
-        <span><a class="led"></a><a class="num">15</a></span>
+        <span><a class="led led-success"></a><a class="num" href="7.html">6</a></span>
+        <span><a class="led led-success"></a><a class="num" href="8.html">7</a></span>
+        <span><a class="led led-success"></a><a class="num" href="9.html">8</a></span>
+        <span><a class="led led-success"></a><a class="num" href="10.html">9</a></span>
+        <span><a class="led led-success"></a><a class="num" href="11.html">10</a></span>
+        <span><a class="led led-success"></a><a class="num" href="12.html">11</a></span>
+        <span><a class="led led-success"></a><a class="num" href="13.html">12</a></span>
+        <span><a class="led led-success"></a><a class="num" href="14.html">13</a></span>
+        <span><a class="led led-success"></a><a class="num" href="14.html">14</a></span>
+        <span><a class="led led-warning"></a><a class="num" href="15.html">15</a></span>
     </div>
 </div>
 
@@ -106,7 +108,7 @@
 
         <div id="comment">
             <p>
-                Попробуй <b>помигать</b> гирляндой. Для этого нужно зажигать ее и тушить. Чтобы потушить гирлянду, используй блок “Потушить все лампочки”. Сделай, чтобы гирлянда <b>три раза</b> мигнула <b style="color: lawngreen">зелёным</b> цветом, <u>а затем погасла</u>.
+                Повторяющиеся блоки можно вставлять внутрь блока <b>“Повторить”</b>. Зажигай на гирлянде по лампочке <b style="color: red">красным</b> цветом от начала и до конца.
             </p>
         </div>
 
@@ -116,8 +118,9 @@
     <div id="editor">
         <div id="toolbox-wrap">
             <xml id="toolbox" style="display: none">
-                <block type="leds_color"></block>
-                <block type="leds_off"></block>
+                <block type="controls_repeat_ext_led"></block>
+                <block type="led_color"></block>
+                <block type="set_next_led"></block>
             </xml>
         </div>
     </div>

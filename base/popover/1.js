@@ -12,31 +12,50 @@ steps = [
     },
     {
         element: "#progress",
-        title: "Прогресс",
-        content: "Здесь ты можешь увидеть свой прогресс, а также выбрать любой уровень.",
+        title: "Шкала прогресса",
+        content: "Это - список уровней, которые тебе предстоит пройти. Текущий уровень выделен оранжевым цветом. Пройденные уровни будут помечены зелёным цветом.",
         placement: "bottom"
     },
     {
         element: "#execute-btn",
-        title: "Запуск программы",
+        title: "Запустить программу",
         content: "Составь свою последовательность команд и нажми «Запустить», чтобы программа начала выполняться.",
         placement: "left"
+    },
+    {
+        element: "#comment",
+        title: "Описание задания",
+        content: "Здесь написано задание, которое тебе нужно выполнить для прохождения уровня.",
+        placement: "left"
+    },
+    {
+        element: "#show-help",
+        title: "Посмотреть подсказку",
+        content: "Если тебе непонятно, как выполнить задание, нажми на эту кнопку.",
+        placement: "left"
     }
+];
 
+steps_help = [
+    {
+        title: "Подсказка",
+        content: "Ты должен перетащить блок и выбрать <b style='color: red'>красный</b> цвет: <br> <img class='img-responsive' src='../image/help/1/1.png'>",
+        orphan: true
+    }
 ];
 
 FAIL_MESSAGE = "Проверь, правильно ли выбран цвет.";
 
-onShowHandler = function (_tour) {
+onNextHandler = function (_tour) {
 
-    if (typeof _tour._state !== "undefined" &&_tour._state.current_step === 0) {
+    console.log("tscs", _tour._state.current_step);
 
-        console.log("ASFJKDNGJKSF");
+    if (typeof _tour._state !== "undefined" && _tour._state.current_step === 0) {
 
         var coords = $(".blocklyBlockCanvas").position();
 
         var arrowHTML = '<div class="popover-arrow">' +
-                            '<img src="/base/image/popover-extra/arrow.png" style="width: 140px;">' +
+                            '<img src="../image/popover-extra/arrow.png" style="width: 140px;">' +
                         '</div>';
 
         $("body").prepend(arrowHTML);

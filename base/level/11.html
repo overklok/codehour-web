@@ -49,15 +49,15 @@
         <script src="../proc/main.js"></script>
 
     <!--Всплывающие окна-->
-        <!--Обработчки для конкретного уровня-->
-        <script src="../popover/11.js"></script>
+    <!--Обработчки для конкретного уровня-->
+    <script src="../popover/12.js"></script>
 
-        <!--Обработчки для всех уровней -->
-        <script src="../popover/main.js"></script>
+    <!--Обработчки для всех уровней -->
+    <script src="../popover/main.js"></script>
 
         <script type="application/javascript">
             var LevelConfig = {
-                maxBlocks: 20,
+                maxBlocks: 5,
                 maxBlocksType: {
                     'led_color': 1
                 }
@@ -75,7 +75,7 @@
         <span><a class="led led-success"></a><a class="num" href="2.html">2</a></span>
         <span><a class="led led-success"></a><a class="num" href="3.html">3</a></span>
         <span><a class="led led-success"></a><a class="num" href="4.html">4</a></span>
-        <span><a class="led led-success"></a><a class="num" href="5.html">5</a></span>
+        <span><a class="led led-success"></a><a class="num" href="6.html">5</a></span>
         <span><a class="led led-success"></a><a class="num" href="6.html">6</a></span>
         <span><a class="led led-success"></a><a class="num" href="7.html">7</a></span>
         <span><a class="led led-success"></a><a class="num" href="8.html">8</a></span>
@@ -85,6 +85,7 @@
         <span><a class="led"></a><a class="num">12</a></span>
         <span><a class="led"></a><a class="num">13</a></span>
         <span><a class="led"></a><a class="num">14</a></span>
+        <span><a class="led"></a><a class="num">15</a></span>
     </div>
 </div>
 
@@ -93,19 +94,19 @@
     <div id="preview">
 
         <div id="display">
-            <img src="../image/demo/8.gif" class="gif-demo" alt="Level 8" style="width: 100%;">
+            <img src="../image/no-image.webp" alt="No Image" style="width: 100%;">
         </div>
 
         <div id="actions" class="text-center">
-            <span class="btn btn-primary" id="show-task"><span class="fa fa-info"></span></span>
-            <button class="btn btn-success" id="execute-btn">Запустить</button>
+            <button class="btn btn-success btn-lg" id="execute-btn">Запустить</button><br>
+            <button class="btn btn-info btn-lg" id="show-help">Показать подсказку</button>
         </div>
 
         <div id="status"></div>
 
         <div id="comment">
             <p>
-                Зажги <b>первые десять</b> лампочек <b style="color: blue">синим</b>, а <b>вторые десять</b> - <b style="color: #ddc314">желтым</b> цветом. Первую лампочку зажги, используя <u>её номер</u>, а для зажигания последующих используй блок “Зажечь следующую лампочку”
+                Попробуй зажечь <b>пять</b> лампочек <b style="color: lawngreen">зелёным</b> цветом, <u>начиная с <b>десятой</b> лампочки</u>.
             </p>
         </div>
 

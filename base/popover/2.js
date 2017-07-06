@@ -6,3 +6,11 @@ steps = [
     }
 
 ];
+
+steps_help = [
+    {
+        title: "Подсказка",
+        content: "Должен быть выбран <u><b>не</b> красный</u> цвет",
+        orphan: true
+    }
+];
