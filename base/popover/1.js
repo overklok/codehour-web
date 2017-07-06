@@ -48,8 +48,6 @@ FAIL_MESSAGE = "Проверь, правильно ли выбран цвет.";
 
 onNextHandler = function (_tour) {
 
-    console.log("tscs", _tour._state.current_step);
-
     if (typeof _tour._state !== "undefined" && _tour._state.current_step === 0) {
 
         var coords = $(".blocklyBlockCanvas").position();
@@ -70,4 +68,12 @@ onNextHandler = function (_tour) {
     } else {
         $(".popover-arrow").fadeOut(100);
     }
+};
+
+onStartHandler = function (tour) {
+    ledsColorBlock.setMovable(false);
+};
+
+onEndHandler = function (tour) {
+    ledsColorBlock.setMovable(true);
 };

@@ -12,8 +12,14 @@ var COLOURS = [
 var STRIP_LENGTH = 30;
 var MAX_REPEAT_TIMES = 500;
 
+var ledsColorBlock;
+
 Blockly.Blocks['leds_color'] = {
+
     init: function() {
+
+        ledsColorBlock = this;
+
         this.jsonInit({
             "message0": 'зажечь все лампочки цветом %1',
             "args0": [

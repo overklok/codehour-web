@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d535be6-9c14-4777-989e-1862906ffedd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/level/15.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/popover/13.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/popover/14.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/base/image/popover-extra/connection.png" afterPath="$PROJECT_DIR$/base/image/help/2/1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/base/popover/14.js" afterPath="$PROJECT_DIR$/base/popover/15.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/image/help/13/1.png" afterPath="$PROJECT_DIR$/base/image/help/13/1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/common/comm.js" afterPath="$PROJECT_DIR$/base/common/comm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/blockly-extra/blocks/led.js" afterPath="$PROJECT_DIR$/base/blockly-extra/blocks/led.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/1.html" afterPath="$PROJECT_DIR$/base/level/1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/10.html" afterPath="$PROJECT_DIR$/base/level/10.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/11.html" afterPath="$PROJECT_DIR$/base/level/11.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/12.html" afterPath="$PROJECT_DIR$/base/level/12.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/13.html" afterPath="$PROJECT_DIR$/base/level/13.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/14.html" afterPath="$PROJECT_DIR$/base/level/14.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/15.html" afterPath="$PROJECT_DIR$/base/level/15.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/2.html" afterPath="$PROJECT_DIR$/base/level/2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/3.html" afterPath="$PROJECT_DIR$/base/level/3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/4.html" afterPath="$PROJECT_DIR$/base/level/4.html" />
@@ -24,17 +21,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/8.html" afterPath="$PROJECT_DIR$/base/level/8.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/9.html" afterPath="$PROJECT_DIR$/base/level/9.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/1.js" afterPath="$PROJECT_DIR$/base/popover/1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/10.js" afterPath="$PROJECT_DIR$/base/popover/10.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/11.js" afterPath="$PROJECT_DIR$/base/popover/11.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/12.js" afterPath="$PROJECT_DIR$/base/popover/12.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/2.js" afterPath="$PROJECT_DIR$/base/popover/2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/3.js" afterPath="$PROJECT_DIR$/base/popover/3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/4.js" afterPath="$PROJECT_DIR$/base/popover/4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/5.js" afterPath="$PROJECT_DIR$/base/popover/5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/6.js" afterPath="$PROJECT_DIR$/base/popover/6.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/7.js" afterPath="$PROJECT_DIR$/base/popover/7.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/8.js" afterPath="$PROJECT_DIR$/base/popover/8.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/9.js" afterPath="$PROJECT_DIR$/base/popover/9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/13.js" afterPath="$PROJECT_DIR$/base/popover/13.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/popover/main.js" afterPath="$PROJECT_DIR$/base/popover/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/style/main.css" afterPath="$PROJECT_DIR$/base/style/main.css" />
     </list>
@@ -51,120 +38,114 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="9.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/popover/9.js">
+      <file leaf-file-name="1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/level/1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="341">
+              <caret line="102" column="14" lean-forward="true" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/level/6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="8.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/popover/8.js">
+      <file leaf-file-name="5.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/level/5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="290">
+              <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
               <folding>
-                <marker date="1499339936000" expanded="true" signature="150:161" ph="..." />
-                <marker date="1499339936000" expanded="true" signature="192:202" ph="..." />
+                <element signature="n#style#0;n#b#2;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="7.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/popover/7.js">
+      <file leaf-file-name="4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/level/4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="15" selection-end-column="2" />
+            <state relative-caret-position="334">
+              <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="6.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/popover/6.js">
+      <file leaf-file-name="3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/level/3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="319">
+              <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/level/2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/level/7.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="9.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base/level/9.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="93" column="82" lean-forward="false" selection-start-line="93" selection-start-column="82" selection-end-line="93" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/level/10.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
               <folding>
-                <marker date="1499339861000" expanded="true" signature="152:162" ph="..." />
+                <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="13.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/popover/13.js">
+      <file leaf-file-name="8.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/level/8.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="75">
+              <caret line="93" column="12" lean-forward="false" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="82" />
               <folding>
-                <marker date="1499340657000" expanded="true" signature="281:298" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/popover/14.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-              <folding>
-                <marker date="1499340695000" expanded="true" signature="133:144" ph="..." />
-                <marker date="1499340695000" expanded="true" signature="201:217" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="15.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/popover/15.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-              <folding>
-                <marker date="1499191532000" expanded="true" signature="178:188" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="13.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/level/13.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#b#2;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="12.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/level/12.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#b#1;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#b#3;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="15.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/base/level/15.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="72" column="43" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
-              <folding>
-                <element signature="n#style#0;n#b#1;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,6 +177,9 @@
       <find>приступить</find>
       <find>execCommand</find>
       <find>margin-top: 40</find>
+      <find>#show</find>
+      <find>help</find>
+      <find>ledsColorBlock</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,7 +193,6 @@
         <option value="$PROJECT_DIR$/base/common/vis.js" />
         <option value="$PROJECT_DIR$/base/blockly-extra/blocks/loops.js" />
         <option value="$PROJECT_DIR$/base/blockly-extra/generators/javascript/led.js" />
-        <option value="$PROJECT_DIR$/base/blockly-extra/blocks/led.js" />
         <option value="$PROJECT_DIR$/base/popover/6-1.js" />
         <option value="$PROJECT_DIR$/base/level/6-1.html" />
         <option value="$PROJECT_DIR$/base/popover/7-2.js" />
@@ -222,39 +205,40 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/base/index.php" />
         <option value="$PROJECT_DIR$/base/popover/5.js" />
-        <option value="$PROJECT_DIR$/base/style/main.css" />
-        <option value="$PROJECT_DIR$/base/popover/1.js" />
-        <option value="$PROJECT_DIR$/base/popover/main.js" />
         <option value="$PROJECT_DIR$/base/popover/2.js" />
         <option value="$PROJECT_DIR$/base/popover/3.js" />
         <option value="$PROJECT_DIR$/base/popover/4.js" />
         <option value="$PROJECT_DIR$/base/level/5-1.html" />
         <option value="$PROJECT_DIR$/base/popover/5-1.js" />
         <option value="$PROJECT_DIR$/base/common/comm.js" />
-        <option value="$PROJECT_DIR$/base/level/4.html" />
-        <option value="$PROJECT_DIR$/base/level/3.html" />
-        <option value="$PROJECT_DIR$/base/level/2.html" />
-        <option value="$PROJECT_DIR$/base/level/1.html" />
-        <option value="$PROJECT_DIR$/base/level/7.html" />
-        <option value="$PROJECT_DIR$/base/level/8.html" />
-        <option value="$PROJECT_DIR$/base/level/10.html" />
-        <option value="$PROJECT_DIR$/base/level/11.html" />
-        <option value="$PROJECT_DIR$/base/level/12.html" />
-        <option value="$PROJECT_DIR$/base/level/13.html" />
-        <option value="$PROJECT_DIR$/base/level/14.html" />
-        <option value="$PROJECT_DIR$/base/level/15.html" />
-        <option value="$PROJECT_DIR$/base/level/6.html" />
-        <option value="$PROJECT_DIR$/base/level/5.html" />
         <option value="$PROJECT_DIR$/base/popover/6.js" />
         <option value="$PROJECT_DIR$/base/popover/7.js" />
         <option value="$PROJECT_DIR$/base/popover/8.js" />
         <option value="$PROJECT_DIR$/base/popover/9.js" />
-        <option value="$PROJECT_DIR$/base/level/9.html" />
         <option value="$PROJECT_DIR$/base/popover/10.js" />
         <option value="$PROJECT_DIR$/base/popover/11.js" />
         <option value="$PROJECT_DIR$/base/popover/12.js" />
-        <option value="$PROJECT_DIR$/base/popover/13.js" />
         <option value="$PROJECT_DIR$/base/popover/14.js" />
+        <option value="$PROJECT_DIR$/base/popover/13.js" />
+        <option value="$PROJECT_DIR$/base/blockly-extra/blocks/led.js" />
+        <option value="$PROJECT_DIR$/base/popover/main.js" />
+        <option value="$PROJECT_DIR$/base/popover/1.js" />
+        <option value="$PROJECT_DIR$/base/level/1.html" />
+        <option value="$PROJECT_DIR$/base/style/main.css" />
+        <option value="$PROJECT_DIR$/base/level/15.html" />
+        <option value="$PROJECT_DIR$/base/level/14.html" />
+        <option value="$PROJECT_DIR$/base/level/13.html" />
+        <option value="$PROJECT_DIR$/base/level/12.html" />
+        <option value="$PROJECT_DIR$/base/level/11.html" />
+        <option value="$PROJECT_DIR$/base/level/10.html" />
+        <option value="$PROJECT_DIR$/base/level/8.html" />
+        <option value="$PROJECT_DIR$/base/level/7.html" />
+        <option value="$PROJECT_DIR$/base/level/6.html" />
+        <option value="$PROJECT_DIR$/base/level/5.html" />
+        <option value="$PROJECT_DIR$/base/level/4.html" />
+        <option value="$PROJECT_DIR$/base/level/3.html" />
+        <option value="$PROJECT_DIR$/base/level/2.html" />
+        <option value="$PROJECT_DIR$/base/level/9.html" />
       </list>
     </option>
   </component>
@@ -550,6 +534,54 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehour-led-gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehour-led-gui" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blockly-extra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generators" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehour-led-gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehour-led-gui" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blockly-extra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -650,25 +682,25 @@
       <workItem from="1498551309769" duration="11276000" />
       <workItem from="1498742064777" duration="50624000" />
       <workItem from="1499166998354" duration="34753000" />
-      <workItem from="1499328345437" duration="10122000" />
+      <workItem from="1499328345437" duration="12435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106775000" />
+    <option name="totallyTimeSpent" value="109088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.50573885" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.49426112" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.49713057" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.49713057" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -716,6 +748,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-930">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -747,6 +782,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="54" column="70" lean-forward="true" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -787,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/blockly-extra/blocks/led.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/blockly-extra/generators/javascript/led.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -804,39 +833,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base/.htaccess" />
     <entry file="file://$PROJECT_DIR$/base/index.php" />
-    <entry file="file://$PROJECT_DIR$/base/style/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="125" column="1" lean-forward="false" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/popover/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding>
-            <marker date="1499337371000" expanded="true" signature="5671:5677" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/image/help/2/1.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/popover/1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="126" lean-forward="false" selection-start-line="41" selection-start-column="104" selection-end-line="41" selection-end-column="126" />
-          <folding>
-            <marker date="1499336694000" expanded="true" signature="1441:1451" ph="..." />
-            <marker date="1499336694000" expanded="true" signature="1987:1999" ph="..." />
-            <marker date="1499336694000" expanded="true" signature="1987:2000" ph="..." />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base/popover/3.js">
@@ -874,101 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="84" column="61" lean-forward="false" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="85" column="61" lean-forward="false" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/11.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#b#1;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/14.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="96" column="8" lean-forward="false" selection-start-line="96" selection-start-column="8" selection-end-line="99" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="913">
-          <caret line="84" column="61" lean-forward="false" selection-start-line="84" selection-start-column="61" selection-end-line="84" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="99" column="14" lean-forward="false" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#b#0;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#1;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="60" column="16" lean-forward="false" selection-start-line="60" selection-start-column="16" selection-end-line="62" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#b#1;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="99" column="14" lean-forward="false" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="70" column="42" lean-forward="false" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#b#2;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/popover/5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -976,22 +880,6 @@
           <folding>
             <marker date="1499338236000" expanded="true" signature="263:279" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="67" column="42" lean-forward="false" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="105" column="147" lean-forward="false" selection-start-line="105" selection-start-column="147" selection-end-line="105" selection-end-column="147" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,16 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/popover/13.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <marker date="1499340657000" expanded="true" signature="281:298" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/popover/14.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1109,34 +987,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/13.html">
+    <entry file="file://$PROJECT_DIR$/base/popover/13.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+        <state relative-caret-position="45">
+          <caret line="3" column="200" lean-forward="false" selection-start-line="3" selection-start-column="200" selection-end-line="3" selection-end-column="200" />
           <folding>
-            <element signature="n#style#0;n#b#2;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1499344127000" expanded="true" signature="278:295" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/12.html">
+    <entry file="file://$PROJECT_DIR$/base/blockly-extra/blocks/led.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+        <state relative-caret-position="75">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/popover/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="70" column="16" lean-forward="false" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#b#1;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#3;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1499352182000" expanded="true" signature="5925:5931" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/style/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/popover/1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <marker date="1499352703000" expanded="true" signature="1441:1451" ph="..." />
+            <marker date="1499352703000" expanded="true" signature="1934:1946" ph="..." />
+            <marker date="1499352703000" expanded="true" signature="1934:1947" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base/level/15.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="72" column="43" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+        <state relative-caret-position="270">
+          <caret line="101" column="8" lean-forward="false" selection-start-line="101" selection-start-column="8" selection-end-line="105" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#b#1;n#p#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/14.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="104" column="8" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#3;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/13.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#b#2;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="110" column="31" lean-forward="false" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#3;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="103" column="14" lean-forward="false" selection-start-line="103" selection-start-column="14" selection-end-line="103" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#b#2;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="100" column="14" lean-forward="false" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="102" column="14" lean-forward="true" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="93" column="12" lean-forward="false" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#b#0;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="93" column="82" lean-forward="false" selection-start-line="93" selection-start-column="82" selection-end-line="93" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>

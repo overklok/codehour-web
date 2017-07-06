@@ -60,6 +60,16 @@ var tour = new Tour({
     },
     onHidden: function (t) {
         $(".popover-arrow").fadeOut(100);
+    },
+    onStart: function (t) {
+        if (typeof onStartHandler !== "undefined") {
+            onStartHandler(t);
+        }
+    },
+    onEnd: function (t) {
+        if (typeof onEndHandler() !== "undefined") {
+            onEndHandler(t);
+        }
     }
 });
 
