@@ -5,10 +5,11 @@ steps = [
         orphan: true
     },
     {
-        element: "#editor",
         title: "Рабочая область",
-        content: "Перетаскивай команды из левой части окна в правую и соединяй их, чтобы получалась непрерывная цепь шагов. <br>" +
-        "Чтобы удалить лишние блоки, перетащи их обратно в левую часть окна или в корзину."
+        content: "Перетаскивай команды из левой части окна в правую и соединяй их, чтобы получалась непрерывная цепь шагов: <br>" +
+        "<img src='../image/help/1/1.png' class='img-responsive' alt='Help 1.1'>" +
+        "Чтобы удалить лишние блоки, перетащи их обратно в левую часть окна или в корзину.",
+        orphan: true
     },
     {
         element: "#progress",
@@ -39,41 +40,43 @@ steps = [
 steps_help = [
     {
         title: "Подсказка",
-        content: "Ты должен перетащить блок и выбрать <b style='color: red'>красный</b> цвет: <br> <img class='img-responsive' src='../image/help/1/1.png'>",
+        content: "Ты должен перетащить блок и выбрать <b style='color: red'>красный</b> цвет: <br> <img class='img-responsive' src='../image/help/1/2.png'>",
         orphan: true
     }
 ];
 
 FAIL_MESSAGE = "Проверь, правильно ли выбран цвет.";
 
-onNextHandler = function (_tour) {
+// onNextHandler = function (_tour) {
+//
+//     if (typeof _tour._state !== "undefined" && _tour._state.current_step === 0) {
+//
+//         var coords = $(".blocklyBlockCanvas").position();
+//
+//         var arrowHTML = '<div class="popover-arrow">' +
+//                             '<img src="../image/popover-extra/arrow.png" style="width: 140px;">' +
+//                         '</div>';
+//
+//         $("body").prepend(arrowHTML);
+//
+//         var $popover_arrow = $(".popover-arrow");
+//
+//         $popover_arrow.offset({top: coords.top, left: coords.left - 10});
+//
+//         setTimeout(function () {
+//             $popover_arrow.fadeIn(100);
+//         }, 400);
+//     } else {
+//         $(".popover-arrow").fadeOut(100);
+//     }
+// };
 
-    if (typeof _tour._state !== "undefined" && _tour._state.current_step === 0) {
-
-        var coords = $(".blocklyBlockCanvas").position();
-
-        var arrowHTML = '<div class="popover-arrow">' +
-                            '<img src="../image/popover-extra/arrow.png" style="width: 140px;">' +
-                        '</div>';
-
-        $("body").prepend(arrowHTML);
-
-        var $popover_arrow = $(".popover-arrow");
-
-        $popover_arrow.offset({top: coords.top, left: coords.left - 10});
-
-        setTimeout(function () {
-            $popover_arrow.fadeIn(100);
-        }, 400);
-    } else {
-        $(".popover-arrow").fadeOut(100);
-    }
-};
-
-onStartHandler = function (tour) {
-    ledsColorBlock.setMovable(false);
-};
-
-onEndHandler = function (tour) {
-    ledsColorBlock.setMovable(true);
-};
+// onStartHandler = function (tour) {
+//     ledsColorBlock.setMovable(false);
+//     ledsColorBlock.setEditable(false);
+// };
+//
+// onEndHandler = function (tour) {
+//     ledsColorBlock.setMovable(true);
+//     ledsColorBlock.setEditable(true);
+// };

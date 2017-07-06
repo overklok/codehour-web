@@ -1,7 +1,7 @@
 var blocksCount;
 
 $(document).ready(function () {
-    onChangeBlocks(0);
+    // onChangeBlocks(0);
 
     function onMove(event) {
         if (event.type == Blockly.Events.MOVE) {
@@ -13,7 +13,7 @@ $(document).ready(function () {
             }
         }
     }
-    workspace.addChangeListener(onMove);
+    // workspace.addChangeListener(onMove);
     
     function onChangeBlocks(count) {
         if (count == 0) {
