@@ -124,7 +124,7 @@ var sendToServer = function (command_type, query, ch_id) {
             setExecStatus(EXEC_STATUS.CONNECTING);
             if (REQ_ATTEMPTS > CONFIG.REQ_ATTEMPTS_MAX) {
                 if (CONFIG.MODE_DEBUG) {
-                    alert("Max attempts reached. Please check the server.");
+                    toastr["error"]("Max attempts reached. Please check the server.");
                 } else {
                     commonErrorTour.start(true);
                 }
@@ -160,7 +160,7 @@ var sendToServer = function (command_type, query, ch_id) {
         console.error('Ошибка при отправлении запроса:', errorThrown);
         $('#debug-text').html("Ошибка при отправлении запроса: " + errorThrown);
         if (CONFIG.MODE_DEBUG) {
-            alert(errorThrown)
+            toastr["error"]("Ошибка сервера. " + errorThrown)
         } else {
             commonErrorTour.start(true);
         }
@@ -241,7 +241,7 @@ $(document).ready(function () {
 
                     eval(code);
                 } catch (e) {
-                    alert(e);
+                    toastr["error"]("Ошибка при выполнении кода. " + e);
                 }
 
             }
