@@ -2,7 +2,7 @@ var COOKIE_NAME_LED_SERVER = 'codehour_led_server';
 
 $(document).ready(function () {
     var led_server = getCookie(COOKIE_NAME_LED_SERVER);
-    if(led_server) {
+    if( typeof led_server !== "undefined") {
         CONFIG.LED_HTTP_SERVER = led_server;
     } else {
         setCookie(COOKIE_NAME_LED_SERVER, CONFIG.LED_HTTP_SERVER);

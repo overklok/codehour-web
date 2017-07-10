@@ -206,7 +206,7 @@ $(document).ready(function () {
 
     CONFIG.LED_HTTP_SERVER = getCookie(COOKIE_NAME_LED_SERVER);
 
-    resetColor();
+    setTimeout(function() {resetColor();}, 2000);
 
     $('#execute-btn').click(function () {
 
