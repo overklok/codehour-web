@@ -1,7 +1,7 @@
 var blocksCount;
 
 $(document).ready(function () {
-    // onChangeBlocks(0);
+    onChangeBlocks(0);
 
     function onMove(event) {
         if (event.type == Blockly.Events.MOVE) {
@@ -13,7 +13,7 @@ $(document).ready(function () {
             }
         }
     }
-    // workspace.addChangeListener(onMove);
+    workspace.addChangeListener(onMove);
     
     function onChangeBlocks(count) {
         if (count == 0) {
@@ -33,7 +33,9 @@ var preCheck = function (xml) {
 };
 
 var blockLimitCheck = function (xml) {
-    console.log(xml, $(xml));
+    if (CONFIG.MODE_DEBUG === true) {
+        console.log(xml, $(xml));
+    }
 
     if (typeof LevelConfig.maxBlocksType !== "undefined") {
 
@@ -55,7 +57,9 @@ var blockLimitCheck = function (xml) {
                     "<block type='" + block_type_name + "'></block>");
                 }
 
-                console.log(toolbox_src.html());
+                if (CONFIG.MODE_DEBUG === true) {
+                    console.log(toolbox_src.html());
+                }
 
                 workspace.updateToolbox(toolbox_src.html());
             }

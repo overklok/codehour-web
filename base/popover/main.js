@@ -67,7 +67,7 @@ var tour = new Tour({
         }
     },
     onEnd: function (t) {
-        if (typeof onEndHandler() !== "undefined") {
+        if (typeof onEndHandler !== "undefined") {
             onEndHandler(t);
         }
     }

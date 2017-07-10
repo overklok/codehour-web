@@ -157,7 +157,7 @@ var sendToServer = function (command_type, query, ch_id) {
     }).done(function () {
         console.info('Отправлено успешно');
     }).fail(function (jqXHR, textStatus, errorThrown) {
-        console.error('Ошибка при отправлении запроса:', errorThrown);
+        console.error('Ошибка при отправлении запроса:', errorThrown, CONFIG.LED_HTTP_SERVER);
         $('#debug-text').html("Ошибка при отправлении запроса: " + errorThrown);
         if (CONFIG.MODE_DEBUG) {
             toastr["error"]("Ошибка сервера (" + CONFIG.LED_HTTP_SERVER + "). " + errorThrown)
@@ -206,7 +206,8 @@ $(document).ready(function () {
 
     CONFIG.LED_HTTP_SERVER = getCookie(COOKIE_NAME_LED_SERVER);
 
-    setTimeout(function() {resetColor();}, 2000);
+    // setTimeout(function() {resetColor();}, 2000);
+    resetColor();
 
     $('#execute-btn').click(function () {
 
