@@ -160,7 +160,7 @@ var sendToServer = function (command_type, query, ch_id) {
         console.error('Ошибка при отправлении запроса:', errorThrown);
         $('#debug-text').html("Ошибка при отправлении запроса: " + errorThrown);
         if (CONFIG.MODE_DEBUG) {
-            toastr["error"]("Ошибка сервера. " + errorThrown)
+            toastr["error"]("Ошибка сервера (" + CONFIG.LED_HTTP_SERVER + "). " + errorThrown)
         } else {
             commonErrorTour.start(true);
         }
