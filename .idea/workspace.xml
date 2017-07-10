@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4d535be6-9c14-4777-989e-1862906ffedd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/common/cookie.js" afterPath="$PROJECT_DIR$/base/common/cookie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/level/11.html" afterPath="$PROJECT_DIR$/base/level/11.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,13 +40,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="11.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base/level/11.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="49" selection-end-column="51" />
+            <state relative-caret-position="160">
+              <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="11.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/popover/11.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <marker date="1499340243000" expanded="true" signature="166:182" ph="..." />
               </folding>
             </state>
           </provider>
@@ -102,7 +114,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookie.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cookie.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/common/cookie.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -118,19 +130,6 @@
             <state relative-caret-position="135">
               <caret line="207" column="0" lean-forward="true" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="8.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/level/8.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="49" selection-end-column="51" />
-              <folding>
-                <element signature="n#style#0;n#b#0;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -224,13 +223,13 @@
         <option value="$PROJECT_DIR$/base/level/8.html" />
         <option value="$PROJECT_DIR$/base/level/9.html" />
         <option value="$PROJECT_DIR$/base/level/10.html" />
-        <option value="$PROJECT_DIR$/base/level/11.html" />
         <option value="$PROJECT_DIR$/base/level/12.html" />
         <option value="$PROJECT_DIR$/base/level/13.html" />
         <option value="$PROJECT_DIR$/base/level/14.html" />
         <option value="$PROJECT_DIR$/base/level/15.html" />
         <option value="$PROJECT_DIR$/base/common/comm.js" />
         <option value="$PROJECT_DIR$/base/common/cookie.js" />
+        <option value="$PROJECT_DIR$/base/level/11.html" />
       </list>
     </option>
   </component>
@@ -286,6 +285,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehour-led-gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codehour-led-gui" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="popover" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,12 +444,12 @@
       <workItem from="1498742064777" duration="50624000" />
       <workItem from="1499166998354" duration="34753000" />
       <workItem from="1499328345437" duration="13630000" />
-      <workItem from="1499406638489" duration="3536000" />
+      <workItem from="1499406638489" duration="3794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113819000" />
+    <option name="totallyTimeSpent" value="114077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="0" />
@@ -580,13 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/popover/11.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -805,16 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/level/11.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="49" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/level/12.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -870,6 +870,26 @@
         <state relative-caret-position="180">
           <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/popover/11.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1499340243000" expanded="true" signature="166:182" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/level/11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
