@@ -12,6 +12,7 @@ $(document).ready(function () {
 function setLedServer(addr) {
     CONFIG.LED_HTTP_SERVER = addr;
     setCookie(COOKIE_NAME_LED_SERVER, CONFIG.LED_HTTP_SERVER);
+    resetColor();
 }
 
 // возвращает cookie с именем name, если есть, если нет, то undefined
